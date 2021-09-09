@@ -15,7 +15,7 @@ document.querySelector('.check').addEventListener('click', function () {
   if (!guess) {
     displayMessage('⛔️ No Number!');
 
-    // Player wins
+// Player wins
   } else if (guess === secretNumber) {
     displayMessage('🎉 Correct Number!');
     document.querySelector('body').style.backgroundColor = '#60b347';
@@ -27,7 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 
-  // Guess is wrong
+// Guess is wrong
   else if (guess !== secretNumber) {
     if (score > 1) {
       displayMessage(guess > secretNumber ? '📈 Too high!' : '📉 Too low!');
