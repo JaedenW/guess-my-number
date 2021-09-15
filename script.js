@@ -40,7 +40,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
-// Reset game
+// Reset the game
 document.querySelector('.again').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 20) + 1;
   score = 20;
